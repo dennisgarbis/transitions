@@ -1,3 +1,7 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
 .box1 {
     margin: 20px;
     width: 100px;
@@ -22,7 +26,7 @@
     height: 50px;
     background-color: pink;
     opacity: .5;
-    transition: all 1s ease;
+    transition: 1s ease-out;
 }
 
 .box2 > a {
@@ -93,4 +97,37 @@
     align-items: center;
     font-size: 100px;
     color: yellow;
+}
+.box5 {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin-left: 90%;
+    transition: 2.5s;
+}
+.box5:hover {
+    background-color: chartreuse;
+    border-radius: 25px;
+    margin-left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-360deg) scale(3);
+}
+
+.box6 {
+    background-color: blue;
+    margin: 20px;
+    margin-left: 50%;
+    width: 125px;
+    height: 125px;
+    transition: 2s ease-in-out;
+}
+
+.box6:hover {
+    transform: skew(85deg, 5deg) rotate(1080deg);
+    background-color: red;
+    width: 15px;
+    height: 15px;
+
 }
