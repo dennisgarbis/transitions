@@ -1,6 +1,8 @@
 body {
-    display: flex;
-    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid black;
 }
 .box1 {
     margin: 20px;
@@ -89,7 +91,7 @@ body {
     margin: 200px;
     color: darkorchid;
     margin-left: 50%;
-    transform: rotate(1080deg) scale(3);
+    transform: rotate(1080deg) scale(1.5);
 }
 .box4:hover > .nerd {
     display: flex;
@@ -108,7 +110,7 @@ body {
 .box5:hover {
     background-color: chartreuse;
     border-radius: 25px;
-    margin-left: 50%;
+    margin-left: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,4 +132,15 @@ body {
     width: 15px;
     height: 15px;
 
+}
+.box7 {
+    background: goldenrod;
+    width: 100px;
+    height: 100px;
+    transition: 1.5s ease-out;
+}
+.box7:hover {
+    background: forestgreen;
+    
+    transform: rotate(90deg) skewy(5deg);
 }
